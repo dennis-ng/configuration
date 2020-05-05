@@ -3,8 +3,13 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set ai
-set number
 set hlsearch
 set ruler
-highlight Comment ctermfg=green
-
+set laststatus=2
+if (has("termguicolors"))
+  set termguicolors
+endif
+colorscheme deus
+highlight Normal guibg=NONE ctermbg=NONE
+highlight NonText guibg=NONE ctermbg=NONE
+highlight Search cterm=NONE ctermfg=black ctermbg=green
